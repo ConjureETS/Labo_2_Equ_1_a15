@@ -7,7 +7,8 @@ public class Jump : MonoBehaviour {
 
     public Transform player;
 
-    private bool isJumping;
+    private bool isJumping; //
+
 	// Use this for initialization
 	void Start () {
         isJumping = false;
