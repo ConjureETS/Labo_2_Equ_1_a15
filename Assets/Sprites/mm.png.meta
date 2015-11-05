@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 14370da66867eeb479e470bd4bb068f7
+timeCreated: 1446690230
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Player
+    21300002: Running0
+    21300004: Running1
+    21300006: Running2
+    21300008: Idle0
+    21300010: Idle1
+    21300012: Jump0
+    21300014: Jump1
+    21300016: Jump2
+    21300018: RunNShot0
+    21300020: RunNShot1
+    21300022: RunNShot2
+    21300024: Jumping0
+    21300026: Jumping1
+    21300028: Jumping2
+    21300030: Jumping3
+    21300032: Jumping4
+    21300034: Shooting
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Player
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 313
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 313
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 313
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Running2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 313
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 313
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RunNShot0
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 263
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RunNShot1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 263
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RunNShot2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 263
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jumping0
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 13
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jumping1
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 13
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jumping2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 13
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jumping3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 13
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jumping4
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 13
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shooting
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 263
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
