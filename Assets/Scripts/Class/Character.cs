@@ -28,6 +28,7 @@ public class Character{
     public void setTouchingTheFloor(bool touchFloor){
         this.touchingTheFloor = touchFloor;
     }
+
     public bool isTouchingTheFloor()
     {
         return touchingTheFloor;

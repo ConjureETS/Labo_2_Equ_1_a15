@@ -7,8 +7,7 @@ public class Jump : MonoBehaviour {
 
     public Transform player;
 
-    private bool isJumping; //
-
+    private bool isJumping;
 	// Use this for initialization
 	void Start () {
         isJumping = false;
@@ -20,12 +19,12 @@ public class Jump : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && isJumping == false)
         {
-            timeJump = 50;
+            timeJump = 10;
             isJumping = true;
         }
 
         if (timeJump > 0) {
-            player.Translate(0, 0.5f, 0);
+            player.Translate(0, 0.4f, 0);
             timeJump--;      
         }
         else
