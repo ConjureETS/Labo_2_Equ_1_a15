@@ -36,4 +36,5 @@ public class Animations : MonoBehaviour {
         anim.SetBool("isShooting", isShooting);
 
     }
+
 }
