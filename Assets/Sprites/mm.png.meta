@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 14370da66867eeb479e470bd4bb068f7
-timeCreated: 1446690230
+timeCreated: 1446945412
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,7 @@ TextureImporter:
     21300030: Jumping3
     21300032: Jumping4
     21300034: Shooting
+    21300036: Jump3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -148,56 +149,6 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Jumping0
-      rect:
-        serializedVersion: 2
-        x: 261
-        y: 13
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Jumping1
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 13
-        width: 12
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Jumping2
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 13
-        width: 17
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Jumping3
-      rect:
-        serializedVersion: 2
-        x: 408
-        y: 13
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Jumping4
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 13
-        width: 21
-        height: 24
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Shooting
       rect:
         serializedVersion: 2
@@ -205,6 +156,36 @@ TextureImporter:
         y: 263
         width: 31
         height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump0
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 107
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 123
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Jump3
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 112
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

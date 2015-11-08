@@ -4,6 +4,7 @@ using System.Collections;
 public class Gravity : MonoBehaviour {
 
     public Character player;
+
     void Start()
     {
         player = new Character(1, 10, 10, false);
