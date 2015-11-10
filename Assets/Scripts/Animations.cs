@@ -4,7 +4,9 @@ using System.Collections;
 public class Animations : MonoBehaviour {
 
     private Animator anim;
+
     private bool isShooting;
+
 
     // Use this for initialization
     void Start () {
@@ -31,9 +33,13 @@ public class Animations : MonoBehaviour {
             isShooting = false;
         } // if
 
-        
+
+
         anim.SetFloat("SpeedX", Mathf.Abs(mouvementX));
         anim.SetBool("isShooting", isShooting);
 
+
     }
+
+
 }

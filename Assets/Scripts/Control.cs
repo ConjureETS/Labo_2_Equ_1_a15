@@ -5,12 +5,17 @@ public class Control : MonoBehaviour {
 
 
     public Transform thingsToMove;
-    public int speed;
+
+    public float speed;          
+    
+    private int eulerAngle;     
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+
+        eulerAngle = 0;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,20 +23,11 @@ public class Control : MonoBehaviour {
         float mouvement = Input.GetAxis ("Horizontal");
 
 
-
-        /*
-        if ( mouvement!= 0)
-        {
-            thingsToMove.Translate(new Vector2(mouvement * speed, 0));
-        }
-        */
-
-
         // aller vers la gauche
         if (mouvement > 0.0)
         {
-            thingsToMove.Translate(new Vector2(mouvement * speed, 0));
-            transform.eulerAngles = new Vector2(0, 0);
+            thingsToMove.Translate(new Vector2(mouvement * speed, 0));      // bouger le player
+            eulerAngle = 0;
 
         } // if
 
@@ -40,11 +36,11 @@ public class Control : MonoBehaviour {
         if (mouvement < 0.0)
         {
 
-            thingsToMove.Translate(new Vector2(-(mouvement * speed), 0));
-            transform.eulerAngles = new Vector2(0, 180);
+            thingsToMove.Translate(new Vector2(-(mouvement * speed), 0));   // bouger le player
+            eulerAngle = 180;
 
         } // if
 
-
+        transform.eulerAngles = new Vector3(0, eulerAngle, 0);              // gauche = sprite effet miroir, droite = sprite normal
     }
 }
