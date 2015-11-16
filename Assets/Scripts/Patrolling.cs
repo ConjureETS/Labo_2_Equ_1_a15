@@ -4,7 +4,7 @@ using System.Collections;
 public class Patrolling : MonoBehaviour {
 
     
-    private float direction = 0.5f;
+    public float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -13,18 +13,18 @@ public class Patrolling : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Translate(direction, 0, 0);
+        this.transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
 	}
 
     void FixedUpdate() {
     }
 
     public void setDirection(float value) {
-        direction = value;
+        speed = value;
     }
 
     public float getDirection() {
-        return direction;
+        return speed;
     }
 
 }

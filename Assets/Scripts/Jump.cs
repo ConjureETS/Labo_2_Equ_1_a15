@@ -18,7 +18,7 @@ public class Jump : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetButton("Fire1") && isOnGround == true)
+        if (Input.GetKeyUp(KeyCode.Space) && isOnGround == true)
         {
             player.velocity = new Vector2(player.velocity.x, playerSpeedY);
         }

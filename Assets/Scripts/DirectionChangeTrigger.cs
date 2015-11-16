@@ -16,7 +16,7 @@ public class DirectionChangeTrigger : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) { 
         if( other.gameObject.tag == "Ennemy" ){
             other.gameObject.GetComponent<Patrolling>().setDirection(- other.gameObject.GetComponent<Patrolling>().getDirection());
-            print("TriggerEnter");
+            //print("TriggerEnter");
         }
     }
 }
