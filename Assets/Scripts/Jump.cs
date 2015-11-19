@@ -3,34 +3,58 @@ using System.Collections;
 
 public class Jump : MonoBehaviour {
 
-    public int timeJump;
+    public Rigidbody2D player;      // le player
 
-    public Transform player;
+    public float playerSpeedY;      // la vitesse de saut
 
-    private bool isJumping;
+    private bool isOnGround;        // somme nous sur le sol?
+
+
 	// Use this for initialization
 	void Start () {
-        isJumping = false;
-        timeJump = 0;
+        isOnGround = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetButton("Fire1") && isJumping == false)
+        if (Input.GetKeyUp(KeyCode.Space) && isOnGround == true)
         {
-            timeJump = 50;
-            isJumping = true;
+            player.velocity = new Vector2(player.velocity.x, playerSpeedY);
         }
 
-        if (timeJump > 0) {
-            player.Translate(0, 0.5f, 0);
-            timeJump--;      
-        }
-        else
-        {
-            isJumping = false;
-        }
-	
 	}
+
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Floor")
+        {
+            isOnGround = true;
+        }
+
+    }
+
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Floor")
+        {
+            isOnGround = true;
+        }
+    }
+
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Floor")
+        {
+
+            isOnGround = false;
+        }
+
+    }
+
+
+
 }
