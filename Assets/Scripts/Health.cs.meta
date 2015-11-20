@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 496d8c4c25eff1443b8789ad17b173c5
-timeCreated: 1447945584
+timeCreated: 1447986069
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - heartImage: {fileID: 11427978, guid: 5c6327fc8da56da4e8a5949457d56e76, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
