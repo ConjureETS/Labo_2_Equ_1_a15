@@ -17,8 +17,8 @@ public class Health : MonoBehaviour
 
 	void Start () 
 	{
-		spaceX = 2.3f;
-		spaceY = 2.3f;
+		spaceX = 1.2f;
+		spaceY = 1.2f;
 
 		AddHearts (startingHealth);
 	}
@@ -67,6 +67,15 @@ public class Health : MonoBehaviour
 		if( collision.gameObject.tag == "Ennemy" )
 		{
 			LoseHearts(1);
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other) 
+	{ 
+		if( other.gameObject.tag == "HeartPickUp" )
+		{
+			AddHearts(1);
+			Destroy (other.gameObject);
 		}
 	}
 }
