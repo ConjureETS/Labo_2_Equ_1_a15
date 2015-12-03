@@ -3,7 +3,9 @@ using System.Collections;
 
 public class MissileTravel : MonoBehaviour {
     public float missileSpeed;
+    public float range;
     private Transform missilePos;
+    private float startingPosX;
     private bool inContact = false;
 
     // ajouter du damage
@@ -11,6 +13,7 @@ public class MissileTravel : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         this.missilePos = this.transform;
+        this.startingPosX = this.transform.position.x;
 	}
 	
 	// Update is called once per frame
@@ -18,6 +21,10 @@ public class MissileTravel : MonoBehaviour {
         if (!inContact)
         {
             this.missilePos.Translate(new Vector3(missileSpeed, 0, 0) * Time.deltaTime);
+        }
+        if (Mathf.Abs(this.startingPosX - this.missilePos.position.x) >= range)
+        {
+            Destroy(this.gameObject);
         }
 	}
 
